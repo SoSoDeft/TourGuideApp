@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/location_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/large_image_content_desc"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/location_web_address_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/web_text_btm_margin"
+        android:background="@drawable/url_bg"
+        android:clickable="true"
+        android:focusable="true"
+        tools:text="@string/web_address_text"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/location_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/location_address_text_view"
+        android:gravity="center_horizontal"
+        android:text="@string/location_title_text"
+        android:layout_marginRight="@dimen/title_text_margin"
+        android:layout_marginLeft="@dimen/title_text_margin"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        android:id="@+id/location_address_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/location_web_address_view"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/web_text_padding"
+        android:text="@string/web_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/web_text_size"
+        android:textStyle="bold" />
+</RelativeLayout>
